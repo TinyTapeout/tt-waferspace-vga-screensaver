@@ -57,9 +57,12 @@ module vga_sync_generator (
   // vertical position counter
   always @(posedge clk) begin
     vsync <= (vpos >= V_SYNC_START && vpos <= V_SYNC_END);
-    if (hmaxxed)
-      if (vmaxxed) vpos <= 0;
-      else vpos <= vpos + 1;
+    if (reset) vpos <= 0;
+    else begin
+      if (hmaxxed)
+        if (vmaxxed) vpos <= 0;
+        else vpos <= vpos + 1;
+    end
   end
 
   // display_on is set when beam is in "safe" visible frame
