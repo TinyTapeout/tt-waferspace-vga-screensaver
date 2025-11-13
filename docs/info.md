@@ -9,9 +9,9 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Displays a bouncing Tiny Tapeout logo on the screen, with animated color gradient.
+Displays a bouncing Wafer.space logo on the screen, with an animated color gradient.
 
-![Tiny Tapeout screensaver](screensaver.jpg)
+![Wafer.space VGA screensaver](screensaver.jpg)
 
 ## How to test
 
